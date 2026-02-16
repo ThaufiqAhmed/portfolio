@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== EmailJS Init & Contact Form =====
   // Initialize EmailJS with your public key
   // Sign up at https://www.emailjs.com (free tier: 200 emails/month)
-  emailjs.init('YOUR_PUBLIC_KEY');  // ← Replace with your EmailJS public key
+  emailjs.init('GVEWSQXZ0i0gwOU9R');
 
   const contactForm = document.getElementById('contact-form');
 
