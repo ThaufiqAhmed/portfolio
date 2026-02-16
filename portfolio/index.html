@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Thaufiq Ahmed | Full Stack Developer</title>
+  <meta name="description"
+    content="Thaufiq Ahmed — Full-Stack Developer with 2+ years of experience building scalable web applications using Java, Spring Boot, React, and Azure.">
+  <meta name="keywords"
+    content="Thaufiq Ahmed, Full Stack Developer, Java, React, Spring Boot, Azure, Web Developer, Chennai">
+
+  <!-- Favicon -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span class="preloader-text">TA</span>
+    </div>
+  </div>
+
+  <!-- ===== Scroll Progress ===== -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===== Navigation ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">T<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero-name reveal-up">Thaufiq<br><span class="gradient-text">Ahmed</span></h1>
+        <div class="hero-role reveal-up">
+          <span class="role-prefix">I build</span>
+          <span class="typed-text" id="typed-text"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-description reveal-up">
+          Full-Stack Developer with 2+ years crafting scalable web applications
+          using Java, Spring Boot, React & Azure services.
+        </p>
+        <div class="hero-cta reveal-up">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials reveal-up">
+          <a href="https://www.linkedin.com/in/thaufiqahmed/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/ThaufiqAhmed" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/thaufi._.q/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="hero-image reveal-up">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <img src="assets/img/me3.jpg" alt="Thaufiq Ahmed">
+          <div class="hero-image-ring"></div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="about-image-card">
+            <img src="assets/img/me3.jpg" alt="Thaufiq Ahmed">
+            <div class="about-image-overlay"></div>
+          </div>
+          <div class="about-experience-badge">
+            <span class="badge-number" data-count="2">0</span>
+            <span class="badge-text">Years<br>Experience</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal-right">
+          <h3 class="about-subtitle">Full-Stack Developer based in Chennai, India</h3>
+          <p class="about-description">
+            Full-Stack Developer with 2+ years of hands-on experience building scalable web applications
+            using Java, Spring Boot, C#, .NET Core, React, and Azure services. Experienced in API development,
+            cloud integration, performance optimization, and delivering production-ready solutions in Agile teams.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-value">Thaufiq Ahmed</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <span class="info-value">+91 9943337678</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value">thaufiq.dev@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Chennai, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-value">B.Tech – IT</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Freelance</span>
+              <span class="info-value status-available">Available</span>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-label">Companies</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+
+          <a href="assets/img/thaufiq_resume(1).pdf" download="Thaufiq_Resume.pdf" class="btn btn-primary"
+            style="margin-top: 1.5rem;">
+            <i class="bi bi-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div class="skill-category reveal-up">
+          <h3 class="category-title"><i class="bi bi-code-slash"></i> Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category reveal-up">
+          <h3 class="category-title"><i class="bi bi-palette"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">AngularJS</span>
+            <span class="skill-tag">jQuery</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category reveal-up">
+          <h3 class="category-title"><i class="bi bi-server"></i> Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">.NET Core</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">Microservices</span>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category reveal-up">
+          <h3 class="category-title"><i class="bi bi-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">Oracle</span>
+            <span class="skill-tag">SSMS</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category reveal-up">
+          <h3 class="category-title"><i class="bi bi-tools"></i> Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Azure Services</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">Swagger</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">Visual Studio</span>
+            <span class="skill-tag">IntelliJ</span>
+          </div>
+        </div>
+
+        <!-- Concepts -->
+        <div class="skill-category reveal-up">
+          <h3 class="category-title"><i class="bi bi-diagram-3"></i> Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">API Integration</span>
+            <span class="skill-tag">Cloud Automation</span>
+            <span class="skill-tag">Performance Optimization</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience Section ===== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Job 1 -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Full-Stack Developer</h3>
+                <p class="timeline-company">JumpStartNinja Technologies – Chennai, TN</p>
+              </div>
+              <span class="timeline-date">Jul 2024 – Present</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Developed and integrated RESTful APIs with GraphQL and microservices to fetch and manage historical
+                data from client databases</li>
+              <li>Enabled seamless inter-service communication by integrating multiple microservices within the API
+                architecture</li>
+              <li>Built high-performance backend services, capable of processing millions of records for analytical
+                client reports</li>
+              <li>Enhanced data retrieval performance by <strong>85%</strong> through query optimization, indexing, and
+                table partitioning</li>
+              <li>Created responsive, dynamic and reusable UI components, ensuring smooth API-driven data rendering</li>
+              <li>Implemented robust authentication, validation, and exception handling across distributed microservice
+                architectures</li>
+              <li>Integrated <strong>Azure Document Intelligence</strong> and <strong>Azure OpenAI</strong> for
+                intelligent document processing and automation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer</h3>
+                <p class="timeline-company">MatrixSoft Innovations Pvt. Ltd. – Chennai, TN</p>
+              </div>
+              <span class="timeline-date">Mar 2024 – Jun 2024</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Built an SME-focused web application to manage GST invoices, sales, purchases, and ledger reports</li>
+              <li>Designed and developed responsive UI screens for sales, product, and invoice workflows</li>
+              <li>Developed and integrated REST APIs for end-to-end sales processing, including order creation, billing,
+                and ledger updates</li>
+              <li>Implemented backend APIs to add, update, and manage product catalogs, ensuring seamless
+                frontend–backend integration</li>
+              <li>Collaborated with backend and QA teams to ensure data accuracy, validation, and smooth user experience
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot education-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">B.Tech – Information Technology</h3>
+                <p class="timeline-company">ST JOSEPH College of Engineering – Chennai, India</p>
+              </div>
+              <span class="timeline-date">2019 – 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've Learned</span>
+        <h2 class="section-title">Project <span class="gradient-text">Highlights</span></h2>
+        <p class="section-subtitle">Key learnings and technical outcomes from real-world production projects</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-number">01</div>
+          <div class="project-icon"><i class="bi bi-gear-wide-connected"></i></div>
+          <h3 class="project-title">State Machine Architecture</h3>
+          <p class="project-client">Workflow & Incentive System</p>
+          <p class="project-desc">
+            Learned to design complex state-machine architectures from scratch — defining workflow structures,
+            state transitions, and validation rules. Gained deep understanding of building configurable
+            business logic engines with filter-based transition controls.
+          </p>
+          <div class="project-tags">
+            <span>State Machine</span><span>Business Logic</span><span>Workflow Design</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-number">02</div>
+          <div class="project-icon"><i class="bi bi-diagram-3"></i></div>
+          <h3 class="project-title">GraphQL API Integration</h3>
+          <p class="project-client">Data Service Layer</p>
+          <p class="project-desc">
+            Built GraphQL-based services integrated with existing REST APIs, learning how to
+            design optimized query schemas and resolvers. Implemented secure authentication,
+            authorization, and token validation for production-grade API access.
+          </p>
+          <div class="project-tags">
+            <span>GraphQL</span><span>REST API</span><span>Auth & Security</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-number">03</div>
+          <div class="project-icon"><i class="bi bi-database-gear"></i></div>
+          <h3 class="project-title">High-Performance Data APIs</h3>
+          <p class="project-client">Analytics & Reporting</p>
+          <p class="project-desc">
+            Developed APIs serving millions of records for analytics dashboards. Learned advanced
+            SQL optimization, indexing strategies, table partitioning, and load-balanced data
+            streaming to handle high-volume concurrent requests efficiently.
+          </p>
+          <div class="project-tags">
+            <span>Performance</span><span>SQL Optimization</span><span>Scalability</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-number">04</div>
+          <div class="project-icon"><i class="bi bi-file-earmark-text"></i></div>
+          <h3 class="project-title">AI Document Automation</h3>
+          <p class="project-client">EdTech Domain</p>
+          <p class="project-desc">
+            Automated data extraction and validation using Azure Form Recognizer and AI services.
+            Implemented fuzzy and rule-based validation logic for detecting mismatches, achieving
+            <strong>92% extraction accuracy</strong> on semi-structured documents.
+          </p>
+          <div class="project-tags">
+            <span>Azure AI</span><span>Automation</span><span>Data Extraction</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-number">05</div>
+          <div class="project-icon"><i class="bi bi-phone"></i></div>
+          <h3 class="project-title">Real-Time Monitoring Platform</h3>
+          <p class="project-client">Internal Product</p>
+          <p class="project-desc">
+            Contributed across full-stack — replaced a legacy BI dashboard with a custom React
+            dashboard. Learned WebRTC integration for real-time video streaming, API-level logging,
+            and building screen monitoring modules from scratch.
+          </p>
+          <div class="project-tags">
+            <span>React</span><span>WebRTC</span><span>Real-Time Streaming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services Section ===== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card glass-card reveal-up">
+          <div class="service-icon"><i class="bi bi-code-square"></i></div>
+          <h3>Web Development</h3>
+          <p>Creating responsive, user-friendly websites using the latest technologies. Full-stack solutions from
+            concept to deployment.</p>
+        </div>
+
+        <div class="service-card glass-card reveal-up">
+          <div class="service-icon"><i class="bi bi-cloud"></i></div>
+          <h3>API Development</h3>
+          <p>Building robust RESTful & GraphQL APIs with microservices architecture, optimized for performance and
+            scalability.</p>
+        </div>
+
+        <div class="service-card glass-card reveal-up">
+          <div class="service-icon"><i class="bi bi-palette2"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive, visually appealing interfaces that offer seamless user experiences across all devices.
+          </p>
+        </div>
+
+        <div class="service-card glass-card reveal-up">
+          <div class="service-icon"><i class="bi bi-search"></i></div>
+          <h3>SEO Optimization</h3>
+          <p>Boosting online visibility and attracting traffic with expert SEO strategies that improve search rankings.
+          </p>
+        </div>
+
+        <div class="service-card glass-card reveal-up">
+          <div class="service-icon"><i class="bi bi-person-badge"></i></div>
+          <h3>Portfolio Building</h3>
+          <p>Custom personal portfolios that showcase skills, projects, and experience with premium design and
+            animations.</p>
+        </div>
+
+        <div class="service-card glass-card reveal-up">
+          <div class="service-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+          <h3>Cloud Integration</h3>
+          <p>Azure services integration — from Document Intelligence and OpenAI to cloud automation and deployment
+            pipelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Testimonials Section ===== -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Kind Words</span>
+        <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+      </div>
+
+      <div class="testimonials-track" id="testimonials-track">
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+          <p>I was on the lookout for a good developer to build my design portfolio and that's when I met Thaufiq. He
+            delivered the site on time, was professional throughout the project period. Looking forward to work with him
+            soon.</p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/Suthaiz.jpg" alt="Abdul Rahman Suthais">
+            <div>
+              <h4>Abdul Rahman Suthais</h4>
+              <span>Graphic Designer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+          <p>Thaufiq is an outstanding developer. He communicates complex ideas clearly. His coding skills and best
+            practices for development make him an asset to any team.</p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/Baris.jpg" alt="Mohamed Baris">
+            <div>
+              <h4>Mohamed Baris</h4>
+              <span>Salesforce Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+          <p>I had the pleasure of working with Thaufiq. As a full-stack developer, He possesses strong team-playing
+            spirit, sincere commitment, enthusiasm, and keen interest in self-improvement.</p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/Sree.jpg" alt="Sreenidhi S">
+            <div>
+              <h4>Sreenidhi S</h4>
+              <span>GIS Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+          <p>Ahmed is a dynamic force of positivity. His passion for technology is truly inspiring, infusing projects
+            with innovation. Working with him is a delight — his upbeat attitude & technical expertise make him
+            invaluable.</p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/Usman.jpg" alt="Syed Usman">
+            <div>
+              <h4>Syed Usman</h4>
+              <span>React Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass-card">
+          <div class="testimonial-quote"><i class="bi bi-quote"></i></div>
+          <p>Ahmed is not just a friend but also an exceptional partner in our academic endeavors. His sharp intellect &
+            dedication made him stand out among peers, ensuring our college years were both memorable & successful.</p>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonials/Perumal.jpg" alt="Perumal P">
+            <div>
+              <h4>Perumal P</h4>
+              <span>Process Executive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+            <h3>Location</h3>
+            <p>Chennai, Tamil Nadu, India</p>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+            <h3>Email</h3>
+            <p>thaufiq.dev@gmail.com</p>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+            <h3>Phone</h3>
+            <p>+91 9943337678</p>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/thaufiqahmed/" target="_blank" class="social-link"
+              aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/ThaufiqAhmed" target="_blank" class="social-link" aria-label="GitHub"><i
+                class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/thaufi._.q/" target="_blank" class="social-link"
+              aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <form id="contact-form" class="contact-form glass-card" data-emailjs-service="YOUR_SERVICE_ID"
+            data-emailjs-template="YOUR_TEMPLATE_ID">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" id="contact-name" name="name" required placeholder=" ">
+                <label for="contact-name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="contact-email" name="email" required placeholder=" ">
+                <label for="contact-email">Your Email</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="contact-subject" name="subject" required placeholder=" ">
+              <label for="contact-subject">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea id="contact-message" name="message" rows="5" required placeholder=" "></textarea>
+              <label for="contact-message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="bi bi-send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-logo">Thaufiq<span class="gradient-text">.</span></p>
+        <p class="footer-text">Designing & Developing Digital Experiences</p>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/thaufiqahmed/" target="_blank" aria-label="LinkedIn"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/ThaufiqAhmed" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/thaufi._.q/" target="_blank" aria-label="Instagram"><i
+              class="bi bi-instagram"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Thaufiq Ahmed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
